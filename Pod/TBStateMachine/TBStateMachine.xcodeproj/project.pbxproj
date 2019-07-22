@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3D7381A22E5CA0B00AFFC11 /* TBStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7381822E5CA0B00AFFC11 /* TBStateMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3D7384622E5CA6B00AFFC11 /* TBSMCompoundTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7382122E5CA6B00AFFC11 /* TBSMCompoundTransition.m */; };
+		D3D7384722E5CA6B00AFFC11 /* TBSMEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382222E5CA6B00AFFC11 /* TBSMEventHandler.h */; };
+		D3D7384822E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382322E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.h */; };
+		D3D7384922E5CA6B00AFFC11 /* TBSMParallelState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382422E5CA6B00AFFC11 /* TBSMParallelState.h */; };
+		D3D7384A22E5CA6B00AFFC11 /* NSException+TBStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382522E5CA6B00AFFC11 /* NSException+TBStateMachine.h */; };
+		D3D7384B22E5CA6B00AFFC11 /* TBSMState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7382622E5CA6B00AFFC11 /* TBSMState.m */; };
+		D3D7384C22E5CA6B00AFFC11 /* TBSMTransitionKind.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382722E5CA6B00AFFC11 /* TBSMTransitionKind.h */; };
+		D3D7384D22E5CA6B00AFFC11 /* TBSMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382822E5CA6B00AFFC11 /* TBSMEvent.h */; };
+		D3D7384E22E5CA6B00AFFC11 /* TBSMJoin.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382922E5CA6B00AFFC11 /* TBSMJoin.h */; };
+		D3D7384F22E5CA6B00AFFC11 /* TBSMJunction.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382A22E5CA6B00AFFC11 /* TBSMJunction.h */; };
+		D3D7385022E5CA6B00AFFC11 /* TBSMTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382B22E5CA6B00AFFC11 /* TBSMTransition.h */; };
+		D3D7385122E5CA6B00AFFC11 /* TBSMState+Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7382C22E5CA6B00AFFC11 /* TBSMState+Notifications.m */; };
+		D3D7385222E5CA6B00AFFC11 /* TBSMTransitionVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382D22E5CA6B00AFFC11 /* TBSMTransitionVertex.h */; };
+		D3D7385322E5CA6B00AFFC11 /* TBSMFork.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382E22E5CA6B00AFFC11 /* TBSMFork.h */; };
+		D3D7385422E5CA6B00AFFC11 /* TBSMPseudoState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7382F22E5CA6B00AFFC11 /* TBSMPseudoState.h */; };
+		D3D7385522E5CA6B00AFFC11 /* TBSMJunctionPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383022E5CA6B00AFFC11 /* TBSMJunctionPath.m */; };
+		D3D7385622E5CA6B00AFFC11 /* TBSMStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7383122E5CA6B00AFFC11 /* TBSMStateMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3D7385722E5CA6B00AFFC11 /* TBSMSubState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7383222E5CA6B00AFFC11 /* TBSMSubState.h */; };
+		D3D7385822E5CA6B00AFFC11 /* TBSMHierarchyVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7383322E5CA6B00AFFC11 /* TBSMHierarchyVertex.h */; };
+		D3D7385922E5CA6B00AFFC11 /* TBSMParallelState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383422E5CA6B00AFFC11 /* TBSMParallelState.m */; };
+		D3D7385A22E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383522E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.m */; };
+		D3D7385B22E5CA6B00AFFC11 /* TBSMEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383622E5CA6B00AFFC11 /* TBSMEventHandler.m */; };
+		D3D7385C22E5CA6B00AFFC11 /* TBSMCompoundTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7383722E5CA6B00AFFC11 /* TBSMCompoundTransition.h */; };
+		D3D7385D22E5CA6B00AFFC11 /* TBSMState.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7383822E5CA6B00AFFC11 /* TBSMState.h */; };
+		D3D7385E22E5CA6B00AFFC11 /* NSException+TBStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383922E5CA6B00AFFC11 /* NSException+TBStateMachine.m */; };
+		D3D7385F22E5CA6B00AFFC11 /* TBSMTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383A22E5CA6B00AFFC11 /* TBSMTransition.m */; };
+		D3D7386022E5CA6B00AFFC11 /* TBSMJunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383B22E5CA6B00AFFC11 /* TBSMJunction.m */; };
+		D3D7386122E5CA6B00AFFC11 /* TBSMJoin.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383C22E5CA6B00AFFC11 /* TBSMJoin.m */; };
+		D3D7386222E5CA6B00AFFC11 /* TBSMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383D22E5CA6B00AFFC11 /* TBSMEvent.m */; };
+		D3D7386322E5CA6B00AFFC11 /* TBSMStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383E22E5CA6B00AFFC11 /* TBSMStateMachine.m */; };
+		D3D7386422E5CA6B00AFFC11 /* TBSMSubState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7383F22E5CA6B00AFFC11 /* TBSMSubState.m */; };
+		D3D7386522E5CA6B00AFFC11 /* TBSMJunctionPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7384022E5CA6B00AFFC11 /* TBSMJunctionPath.h */; };
+		D3D7386622E5CA6B00AFFC11 /* TBSMContainingVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7384122E5CA6B00AFFC11 /* TBSMContainingVertex.h */; };
+		D3D7386722E5CA6B00AFFC11 /* TBSMPseudoState.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7384222E5CA6B00AFFC11 /* TBSMPseudoState.m */; };
+		D3D7386822E5CA6B00AFFC11 /* TBSMFork.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D7384322E5CA6B00AFFC11 /* TBSMFork.m */; };
+		D3D7386922E5CA6B00AFFC11 /* TBSMState+Notifications.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7384422E5CA6B00AFFC11 /* TBSMState+Notifications.h */; };
+		D3D7386A22E5CA6B00AFFC11 /* TBSMMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D7384522E5CA6B00AFFC11 /* TBSMMacros.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3D7381522E5CA0B00AFFC11 /* TBStateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBStateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D7381822E5CA0B00AFFC11 /* TBStateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBStateMachine.h; sourceTree = "<group>"; };
+		D3D7381922E5CA0B00AFFC11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D7382122E5CA6B00AFFC11 /* TBSMCompoundTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMCompoundTransition.m; sourceTree = "<group>"; };
+		D3D7382222E5CA6B00AFFC11 /* TBSMEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMEventHandler.h; sourceTree = "<group>"; };
+		D3D7382322E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBSMStateMachine+Notifications.h"; sourceTree = "<group>"; };
+		D3D7382422E5CA6B00AFFC11 /* TBSMParallelState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMParallelState.h; sourceTree = "<group>"; };
+		D3D7382522E5CA6B00AFFC11 /* NSException+TBStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+TBStateMachine.h"; sourceTree = "<group>"; };
+		D3D7382622E5CA6B00AFFC11 /* TBSMState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMState.m; sourceTree = "<group>"; };
+		D3D7382722E5CA6B00AFFC11 /* TBSMTransitionKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMTransitionKind.h; sourceTree = "<group>"; };
+		D3D7382822E5CA6B00AFFC11 /* TBSMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMEvent.h; sourceTree = "<group>"; };
+		D3D7382922E5CA6B00AFFC11 /* TBSMJoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMJoin.h; sourceTree = "<group>"; };
+		D3D7382A22E5CA6B00AFFC11 /* TBSMJunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMJunction.h; sourceTree = "<group>"; };
+		D3D7382B22E5CA6B00AFFC11 /* TBSMTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMTransition.h; sourceTree = "<group>"; };
+		D3D7382C22E5CA6B00AFFC11 /* TBSMState+Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBSMState+Notifications.m"; sourceTree = "<group>"; };
+		D3D7382D22E5CA6B00AFFC11 /* TBSMTransitionVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMTransitionVertex.h; sourceTree = "<group>"; };
+		D3D7382E22E5CA6B00AFFC11 /* TBSMFork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMFork.h; sourceTree = "<group>"; };
+		D3D7382F22E5CA6B00AFFC11 /* TBSMPseudoState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMPseudoState.h; sourceTree = "<group>"; };
+		D3D7383022E5CA6B00AFFC11 /* TBSMJunctionPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMJunctionPath.m; sourceTree = "<group>"; };
+		D3D7383122E5CA6B00AFFC11 /* TBSMStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMStateMachine.h; sourceTree = "<group>"; };
+		D3D7383222E5CA6B00AFFC11 /* TBSMSubState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMSubState.h; sourceTree = "<group>"; };
+		D3D7383322E5CA6B00AFFC11 /* TBSMHierarchyVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMHierarchyVertex.h; sourceTree = "<group>"; };
+		D3D7383422E5CA6B00AFFC11 /* TBSMParallelState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMParallelState.m; sourceTree = "<group>"; };
+		D3D7383522E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBSMStateMachine+Notifications.m"; sourceTree = "<group>"; };
+		D3D7383622E5CA6B00AFFC11 /* TBSMEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMEventHandler.m; sourceTree = "<group>"; };
+		D3D7383722E5CA6B00AFFC11 /* TBSMCompoundTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMCompoundTransition.h; sourceTree = "<group>"; };
+		D3D7383822E5CA6B00AFFC11 /* TBSMState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMState.h; sourceTree = "<group>"; };
+		D3D7383922E5CA6B00AFFC11 /* NSException+TBStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+TBStateMachine.m"; sourceTree = "<group>"; };
+		D3D7383A22E5CA6B00AFFC11 /* TBSMTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMTransition.m; sourceTree = "<group>"; };
+		D3D7383B22E5CA6B00AFFC11 /* TBSMJunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMJunction.m; sourceTree = "<group>"; };
+		D3D7383C22E5CA6B00AFFC11 /* TBSMJoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMJoin.m; sourceTree = "<group>"; };
+		D3D7383D22E5CA6B00AFFC11 /* TBSMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMEvent.m; sourceTree = "<group>"; };
+		D3D7383E22E5CA6B00AFFC11 /* TBSMStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMStateMachine.m; sourceTree = "<group>"; };
+		D3D7383F22E5CA6B00AFFC11 /* TBSMSubState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMSubState.m; sourceTree = "<group>"; };
+		D3D7384022E5CA6B00AFFC11 /* TBSMJunctionPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMJunctionPath.h; sourceTree = "<group>"; };
+		D3D7384122E5CA6B00AFFC11 /* TBSMContainingVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMContainingVertex.h; sourceTree = "<group>"; };
+		D3D7384222E5CA6B00AFFC11 /* TBSMPseudoState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMPseudoState.m; sourceTree = "<group>"; };
+		D3D7384322E5CA6B00AFFC11 /* TBSMFork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSMFork.m; sourceTree = "<group>"; };
+		D3D7384422E5CA6B00AFFC11 /* TBSMState+Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBSMState+Notifications.h"; sourceTree = "<group>"; };
+		D3D7384522E5CA6B00AFFC11 /* TBSMMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSMMacros.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3D7381222E5CA0B00AFFC11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3D7380B22E5CA0B00AFFC11 = {
+			isa = PBXGroup;
+			children = (
+				D3D7381722E5CA0B00AFFC11 /* TBStateMachine */,
+				D3D7381622E5CA0B00AFFC11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3D7381622E5CA0B00AFFC11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7381522E5CA0B00AFFC11 /* TBStateMachine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3D7381722E5CA0B00AFFC11 /* TBStateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7381822E5CA0B00AFFC11 /* TBStateMachine.h */,
+				D3D7382022E5CA6B00AFFC11 /* Core */,
+				D3D7381922E5CA0B00AFFC11 /* Info.plist */,
+			);
+			path = TBStateMachine;
+			sourceTree = "<group>";
+		};
+		D3D7382022E5CA6B00AFFC11 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7382522E5CA6B00AFFC11 /* NSException+TBStateMachine.h */,
+				D3D7383922E5CA6B00AFFC11 /* NSException+TBStateMachine.m */,
+				D3D7383722E5CA6B00AFFC11 /* TBSMCompoundTransition.h */,
+				D3D7382122E5CA6B00AFFC11 /* TBSMCompoundTransition.m */,
+				D3D7384122E5CA6B00AFFC11 /* TBSMContainingVertex.h */,
+				D3D7382822E5CA6B00AFFC11 /* TBSMEvent.h */,
+				D3D7383D22E5CA6B00AFFC11 /* TBSMEvent.m */,
+				D3D7382222E5CA6B00AFFC11 /* TBSMEventHandler.h */,
+				D3D7383622E5CA6B00AFFC11 /* TBSMEventHandler.m */,
+				D3D7382E22E5CA6B00AFFC11 /* TBSMFork.h */,
+				D3D7384322E5CA6B00AFFC11 /* TBSMFork.m */,
+				D3D7383322E5CA6B00AFFC11 /* TBSMHierarchyVertex.h */,
+				D3D7382922E5CA6B00AFFC11 /* TBSMJoin.h */,
+				D3D7383C22E5CA6B00AFFC11 /* TBSMJoin.m */,
+				D3D7382A22E5CA6B00AFFC11 /* TBSMJunction.h */,
+				D3D7383B22E5CA6B00AFFC11 /* TBSMJunction.m */,
+				D3D7384022E5CA6B00AFFC11 /* TBSMJunctionPath.h */,
+				D3D7383022E5CA6B00AFFC11 /* TBSMJunctionPath.m */,
+				D3D7384522E5CA6B00AFFC11 /* TBSMMacros.h */,
+				D3D7382422E5CA6B00AFFC11 /* TBSMParallelState.h */,
+				D3D7383422E5CA6B00AFFC11 /* TBSMParallelState.m */,
+				D3D7382F22E5CA6B00AFFC11 /* TBSMPseudoState.h */,
+				D3D7384222E5CA6B00AFFC11 /* TBSMPseudoState.m */,
+				D3D7383822E5CA6B00AFFC11 /* TBSMState.h */,
+				D3D7382622E5CA6B00AFFC11 /* TBSMState.m */,
+				D3D7384422E5CA6B00AFFC11 /* TBSMState+Notifications.h */,
+				D3D7382C22E5CA6B00AFFC11 /* TBSMState+Notifications.m */,
+				D3D7383122E5CA6B00AFFC11 /* TBSMStateMachine.h */,
+				D3D7383E22E5CA6B00AFFC11 /* TBSMStateMachine.m */,
+				D3D7382322E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.h */,
+				D3D7383522E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.m */,
+				D3D7383222E5CA6B00AFFC11 /* TBSMSubState.h */,
+				D3D7383F22E5CA6B00AFFC11 /* TBSMSubState.m */,
+				D3D7382B22E5CA6B00AFFC11 /* TBSMTransition.h */,
+				D3D7383A22E5CA6B00AFFC11 /* TBSMTransition.m */,
+				D3D7382722E5CA6B00AFFC11 /* TBSMTransitionKind.h */,
+				D3D7382D22E5CA6B00AFFC11 /* TBSMTransitionVertex.h */,
+			);
+			name = Core;
+			path = ../../Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D3D7381022E5CA0B00AFFC11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D7385C22E5CA6B00AFFC11 /* TBSMCompoundTransition.h in Headers */,
+				D3D7384F22E5CA6B00AFFC11 /* TBSMJunction.h in Headers */,
+				D3D7386922E5CA6B00AFFC11 /* TBSMState+Notifications.h in Headers */,
+				D3D7384722E5CA6B00AFFC11 /* TBSMEventHandler.h in Headers */,
+				D3D7384922E5CA6B00AFFC11 /* TBSMParallelState.h in Headers */,
+				D3D7385D22E5CA6B00AFFC11 /* TBSMState.h in Headers */,
+				D3D7385222E5CA6B00AFFC11 /* TBSMTransitionVertex.h in Headers */,
+				D3D7385322E5CA6B00AFFC11 /* TBSMFork.h in Headers */,
+				D3D7384A22E5CA6B00AFFC11 /* NSException+TBStateMachine.h in Headers */,
+				D3D7384822E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.h in Headers */,
+				D3D7386522E5CA6B00AFFC11 /* TBSMJunctionPath.h in Headers */,
+				D3D7386A22E5CA6B00AFFC11 /* TBSMMacros.h in Headers */,
+				D3D7386622E5CA6B00AFFC11 /* TBSMContainingVertex.h in Headers */,
+				D3D7385722E5CA6B00AFFC11 /* TBSMSubState.h in Headers */,
+				D3D7384D22E5CA6B00AFFC11 /* TBSMEvent.h in Headers */,
+				D3D7381A22E5CA0B00AFFC11 /* TBStateMachine.h in Headers */,
+				D3D7385422E5CA6B00AFFC11 /* TBSMPseudoState.h in Headers */,
+				D3D7385622E5CA6B00AFFC11 /* TBSMStateMachine.h in Headers */,
+				D3D7385022E5CA6B00AFFC11 /* TBSMTransition.h in Headers */,
+				D3D7384E22E5CA6B00AFFC11 /* TBSMJoin.h in Headers */,
+				D3D7385822E5CA6B00AFFC11 /* TBSMHierarchyVertex.h in Headers */,
+				D3D7384C22E5CA6B00AFFC11 /* TBSMTransitionKind.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D3D7381422E5CA0B00AFFC11 /* TBStateMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3D7381D22E5CA0B00AFFC11 /* Build configuration list for PBXNativeTarget "TBStateMachine" */;
+			buildPhases = (
+				D3D7381022E5CA0B00AFFC11 /* Headers */,
+				D3D7381122E5CA0B00AFFC11 /* Sources */,
+				D3D7381222E5CA0B00AFFC11 /* Frameworks */,
+				D3D7381322E5CA0B00AFFC11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBStateMachine;
+			productName = TBStateMachine;
+			productReference = D3D7381522E5CA0B00AFFC11 /* TBStateMachine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3D7380C22E5CA0B00AFFC11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Carles Roig";
+				TargetAttributes = {
+					D3D7381422E5CA0B00AFFC11 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D3D7380F22E5CA0B00AFFC11 /* Build configuration list for PBXProject "TBStateMachine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3D7380B22E5CA0B00AFFC11;
+			productRefGroup = D3D7381622E5CA0B00AFFC11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3D7381422E5CA0B00AFFC11 /* TBStateMachine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3D7381322E5CA0B00AFFC11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3D7381122E5CA0B00AFFC11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D7385F22E5CA6B00AFFC11 /* TBSMTransition.m in Sources */,
+				D3D7384622E5CA6B00AFFC11 /* TBSMCompoundTransition.m in Sources */,
+				D3D7384B22E5CA6B00AFFC11 /* TBSMState.m in Sources */,
+				D3D7385A22E5CA6B00AFFC11 /* TBSMStateMachine+Notifications.m in Sources */,
+				D3D7385522E5CA6B00AFFC11 /* TBSMJunctionPath.m in Sources */,
+				D3D7385122E5CA6B00AFFC11 /* TBSMState+Notifications.m in Sources */,
+				D3D7386422E5CA6B00AFFC11 /* TBSMSubState.m in Sources */,
+				D3D7385B22E5CA6B00AFFC11 /* TBSMEventHandler.m in Sources */,
+				D3D7385E22E5CA6B00AFFC11 /* NSException+TBStateMachine.m in Sources */,
+				D3D7385922E5CA6B00AFFC11 /* TBSMParallelState.m in Sources */,
+				D3D7386122E5CA6B00AFFC11 /* TBSMJoin.m in Sources */,
+				D3D7386722E5CA6B00AFFC11 /* TBSMPseudoState.m in Sources */,
+				D3D7386222E5CA6B00AFFC11 /* TBSMEvent.m in Sources */,
+				D3D7386822E5CA6B00AFFC11 /* TBSMFork.m in Sources */,
+				D3D7386022E5CA6B00AFFC11 /* TBSMJunction.m in Sources */,
+				D3D7386322E5CA6B00AFFC11 /* TBSMStateMachine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3D7381B22E5CA0B00AFFC11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3D7381C22E5CA0B00AFFC11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3D7381E22E5CA0B00AFFC11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TBStateMachine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkrumow.TBStateMachine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3D7381F22E5CA0B00AFFC11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TBStateMachine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkrumow.TBStateMachine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3D7380F22E5CA0B00AFFC11 /* Build configuration list for PBXProject "TBStateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D7381B22E5CA0B00AFFC11 /* Debug */,
+				D3D7381C22E5CA0B00AFFC11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3D7381D22E5CA0B00AFFC11 /* Build configuration list for PBXNativeTarget "TBStateMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3D7381E22E5CA0B00AFFC11 /* Debug */,
+				D3D7381F22E5CA0B00AFFC11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3D7380C22E5CA0B00AFFC11 /* Project object */;
+}
